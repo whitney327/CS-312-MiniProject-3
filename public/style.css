@@ -1,0 +1,276 @@
+body {
+    background-color: #eaf3fa;
+}
+
+.site-header {
+    width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #f8fbfe;
+    border: 3px solid #cadae9;
+    border-radius: 12px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.create-post {
+    width: 900px;
+    margin: 20px auto;
+    text-align: left;
+    background-color: #f8fbfe;
+    border: 3px solid #cadae9;
+    border-radius: 12px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#create-post input[type="text"] {
+    width: 100%;
+    padding: 18px 20px;
+    border: 1px solid #d5e1ed;
+    border-radius: 10px;
+    background-color: #f8fbfe;
+    font-size: 18px;
+    color: #526b83;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#create-post textarea {
+    width: 100%;
+    padding: 18px 20px;
+    border: 1px solid #d5e1ed;
+    border-radius: 10px;
+    background-color: #f8fbfe;
+    font-size: 18px;
+    color: #526b83;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#create-post button[type="submit"] {
+    background-color: #7e9fbd;
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+#create-post button[type="submit"]:hover {
+    background-color: #6688a8;
+    transform: translateY(-2px);
+}
+
+#create-post button[type="submit"]:hover {
+    transform: translateY(0);
+}
+
+#create-post form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#create-post button[type="submit"] {
+    align-self: flex-end;
+}
+
+.post-box {
+    width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #f8fbfe;
+    border: 3px solid #cadae9;
+    border-radius: 12px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Sunflower';
+    src: url('/fonts/Sunflower.otf') format('opentype');
+}
+
+h1,
+h2 {
+    font-family: 'Sunflower', serif;
+    color:#6688a8;
+}
+
+#create-post label {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#7e9fbd;
+}
+
+#create-post input::placeholder,
+#create-post textarea::placeholder {
+    color: #afceeb;
+    opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-box h2 {
+    font-family: 'Sunflower', serif;
+    font-size: 26px;
+}
+
+.post-box p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #7e9fbd;
+    line-height: 1.6;
+}
+
+.post-box button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #7e9fbd;
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+.post-box form {
+    display: inline-block;
+    margin: 8px 0;
+}
+
+.edit-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#edit-post input[type="text"] {
+    width: 100%;
+    padding: 18px 20px;
+    border: 1px solid #d5e1ed;
+    border-radius: 10px;
+    background-color: #f8fbfe;
+    font-size: 18px;
+    color: #526b83;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#edit-post textarea {
+    width: 100%;
+    padding: 18px 20px;
+    border: 1px solid #d5e1ed;
+    border-radius: 10px;
+    background-color: #f8fbfe;
+    font-size: 18px;
+    color: #526b83;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#edit-post button[type="submit"] {
+    background-color: #7e9fbd;
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+#edit-post button[type="submit"]:hover {
+    background-color: #6688a8;
+    transform: translateY(-2px);
+}
+
+#edit-post button[type="submit"]:hover {
+    transform: translateY(0);
+}
+
+#edit-post form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#edit-post button[type="submit"] {
+    align-self: flex-end;
+}
+
+#edit-post label {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#7e9fbd;
+}
+
+.cancel-button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #7e9fbd;
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+    width: auto;
+    align-self: flex-start;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    margin: 16px;
+}
+
+.user-info form {
+    margin: 0;
+}
+
+.user-info button {
+    background-color: #7e9fbd;
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+.user-info button[type="submit"]:hover {
+    background-color: #6688a8;
+    transform: translateY(-2px);
+}
+
+.user-info button[type="submit"]:hover {
+    transform: translateY(0);
+}
+
+.user-info span {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Sunflower', serif;
+    color:#5e6770;
+}

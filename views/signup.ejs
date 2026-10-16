@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/signup.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Create an Account</h1>
+    </header>
+    
+    <form action="/signup" method="POST" class="signup-form">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+        <div class="signup-actions">
+            <button type="submit">Sign Up</button>
+            <a href="/signin" class="signin-button">Sign In</a>
+        </div>
+    </form>
+
+</body>
+</html>

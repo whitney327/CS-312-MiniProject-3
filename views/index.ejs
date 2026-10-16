@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1><%= blogTitle %></h1>
+
+        <h2>A space for my thoughts, ideas, and dreams.</h2>
+
+        <div class="user-info">
+            <% if (userName) { %>
+                <span>Welcome, <%= userName %>!</span>
+            <% } %>
+
+            <form action="/signout" method="POST">
+                <button type="submit">Sign Out</button>
+            </form>
+        </div>
+    </header>
+
+    <section id="create-post" class="create-post">
+        <h2>What is on your mind?</h2>
+        <form action="/posts" method="POST">
+            <label for="title">Entry Title</label>
+            <br><br>
+            <input type="text" id="title" name="title" placeholder="Give your entry a title..." required>
+
+            <br><br>
+
+            <label for="content">Let your thoughts wonder...</label>
+            <br><br>
+            <textarea id="content" name="content" placeholder="Write about your day, a dream you had, what inspires you..." required></textarea>
+
+            <br><br>
+
+            <button type="submit">Publish Post</button>
+        </form>
+    </section>
+
+
+        <% posts.forEach(post => { %>
+            <article class="post-box">
+                <h2><%= post.title %></h2>
+                <p><%= post.body%></p>
+                <p>Written by: <%= post.creator_name %></p>
+                <p>Created: <%= new Date(post.date_created).toLocaleString() %></p>
+                <% if (userId && userId === post.creator_user_id) { %>
+                    <form action="/posts/<%=post.blog_id %>/edit" method="GET">
+                        <button type="submit">Edit</button>
+                    </form>
+
+                    <form action="/posts/<%=post.blog_id %>/delete" method="POST">
+                        <button type="submit">Delete</button>
+                    </form>
+                <% } %>
+            </article>
+    <% }); %>
+
+</body>
+</html>
